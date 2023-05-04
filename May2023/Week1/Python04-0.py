@@ -70,3 +70,5 @@ if s.endswith("ome!"):
 # Split the string into three separate strings,
 # each containing only a word
 print("Split the words of the string: %s" % s.split(" "))
+
+#end here
