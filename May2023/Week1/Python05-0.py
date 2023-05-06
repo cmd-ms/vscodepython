@@ -78,3 +78,10 @@ numbers = [
 
 # your code goes here
 for number in numbers:
+    if number == 237:
+        break
+
+    if number % 2 == 1: #change this to 0 to print out odd numbers and 1 for even numbers
+        continue
+
+    print(number)
