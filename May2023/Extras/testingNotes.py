@@ -17,3 +17,8 @@ b=[1]
 a=False
 if not a:
     print("yhyh")
+
+import urllib
+import re
+dir(urllib) , "split line" , dir(re)
+#help(re)
