@@ -41,5 +41,25 @@ a = ['foo', 'bar', 'baz']
 while a:
     print(a.pop())
 
-for x in range(5):
+# for x in range(5):
+#     print(x)
+
+for x in range(10): #even numbers
+    if x % 2 != 0: #make 1 for odd numbers
+        continue #can be replaced with print for vise versa (odd)
     print(x)
+
+for x in range(10): #odd numbers
+    if x % 2 != 0: #make 1 for even numbers
+        print(x)
+
+for n in range(10, 20, 1): #between 10 and 20 goes up by 1
+    print(n)
+
+#After execution of which loop the value of "b" will be equal to 23?
+a = 2
+b = 3
+while a < 10:
+    b += a
+    a += 2
+print(b)
