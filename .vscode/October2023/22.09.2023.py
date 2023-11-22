@@ -1,8 +1,14 @@
 import random
 
 def get_choices():
-    player_choice = input("Enter a choice = rock, paper, scissors: ")
     options = ["rock", "paper", "scissors"]
+    player_choice = 0
+    while player_choice != options:
+        player_choice = str(input("Enter a choice = rock, paper, scissors: "))    
+        if player_choice not in options:
+            print("Incorrect choice. Please chose again.")
+        else:
+            break
     computer_choice = random.choice(options)
     choices = {"player": player_choice, "computer": computer_choice}
     return choices
@@ -27,7 +33,7 @@ def check_win(player, computer):
         else:
             return "Scissors cut paper, You Win"
     else:
-        return "The player has made a wrong decision"
+        return "Somethings gone wrong here!"
         
 choices = get_choices()
 result = check_win(choices["player"], choices["computer"])
